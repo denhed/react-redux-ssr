@@ -23,17 +23,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="504">
               <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
-                <marker date="1515014494000" expanded="true" signature="386:536" ph="..." />
-                <marker date="1515014494000" expanded="true" signature="425:522" ph="..." />
-                <marker date="1515014494000" expanded="true" signature="443:444" ph="..." />
-                <marker date="1515014494000" expanded="true" signature="443:459" ph="..." />
+                <marker date="1515015879000" expanded="true" signature="387:547" ph="..." />
+                <marker date="1515015879000" expanded="true" signature="426:533" ph="..." />
+                <marker date="1515015879000" expanded="true" signature="454:455" ph="..." />
+                <marker date="1515015879000" expanded="true" signature="454:470" ph="..." />
               </folding>
             </state>
           </provider>
@@ -49,12 +49,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="client.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/src/client/client.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-              <folding />
+            <state relative-caret-position="105">
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+              <folding>
+                <element signature="e#49#75#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,12 +86,12 @@
       <list>
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/server/webpack.server.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/server/src/client/components/Home.js" />
         <option value="$PROJECT_DIR$/server/webpack.client.js" />
-        <option value="$PROJECT_DIR$/server/src/client/client.js" />
         <option value="$PROJECT_DIR$/server/package.json" />
         <option value="$PROJECT_DIR$/server/src/index.js" />
+        <option value="$PROJECT_DIR$/server/src/client/client.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -321,12 +323,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1514926247959</updated>
-      <workItem from="1514926249232" duration="7725000" />
+      <workItem from="1514926249232" duration="9265000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7725000" />
+    <option name="totallyTimeSpent" value="9265000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1323" height="1440" extended-state="6" />
@@ -374,14 +376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/webpack.server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
@@ -406,6 +400,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <marker date="1515015879000" expanded="true" signature="387:547" ph="..." />
+            <marker date="1515015879000" expanded="true" signature="426:533" ph="..." />
+            <marker date="1515015879000" expanded="true" signature="454:455" ph="..." />
+            <marker date="1515015879000" expanded="true" signature="454:470" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/client/components/Home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -414,24 +422,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/client/client.js">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        <state relative-caret-position="84">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/index.js">
+    <entry file="file://$PROJECT_DIR$/server/src/client/client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+        <state relative-caret-position="105">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
-            <marker date="1515014494000" expanded="true" signature="386:536" ph="..." />
-            <marker date="1515014494000" expanded="true" signature="425:522" ph="..." />
-            <marker date="1515014494000" expanded="true" signature="443:444" ph="..." />
-            <marker date="1515014494000" expanded="true" signature="443:459" ph="..." />
+            <element signature="e#49#75#0" expanded="true" />
           </folding>
         </state>
       </provider>

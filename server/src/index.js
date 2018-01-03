@@ -10,12 +10,12 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
    const content = renderToString(<Home />);
 
-   // tell browser to goback till express and get public bundle.js
+   // tell browser to go back till express and get public bundle.js
    const html = `
       <html>
          <head></head>
          <body>
-            <div>${content}</div>
+            <div id="root">${content}</div>
             <script src="bundle.js"></script>
          </body>
       </html>
