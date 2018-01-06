@@ -28,7 +28,7 @@ function mapStateToProps(state) {
 }
 
 function loadData(store) {
-    // manually calls a action and send back promise to server.
+    // manually calls a action creator and send back promise to server.
     return store.dispatch(fetchUsers());
 }
 
