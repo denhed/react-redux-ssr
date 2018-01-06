@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4f2fe52e-e010-4ef3-8d9b-fdf974d5555d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/index.js" afterPath="$PROJECT_DIR$/server/src/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/client/actions/index.js" afterPath="$PROJECT_DIR$/server/src/client/actions/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/client/client.js" afterPath="$PROJECT_DIR$/server/src/client/client.js" />
     </list>
     <ignored path="Udemy React SSR.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +30,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
@@ -92,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/src/client/actions/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="189">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -105,8 +106,8 @@
       <file leaf-file-name="client.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/src/client/client.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+            <state relative-caret-position="399">
+              <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
               <folding>
                 <element signature="e#99#125#0" expanded="true" />
               </folding>
@@ -140,14 +141,14 @@
         <option value="$PROJECT_DIR$/server/src/client/reducers/usersReducer.js" />
         <option value="$PROJECT_DIR$/server/src/client/reducers/index.js" />
         <option value="$PROJECT_DIR$/server/src/helpers/createStore.js" />
-        <option value="$PROJECT_DIR$/server/src/client/actions/index.js" />
         <option value="$PROJECT_DIR$/server/src/client/components/UsersList.js" />
         <option value="$PROJECT_DIR$/server/src/client/pages/HomePage.js" />
         <option value="$PROJECT_DIR$/server/src/client/pages/UsersListPage.js" />
         <option value="$PROJECT_DIR$/server/src/client/Routes.js" />
-        <option value="$PROJECT_DIR$/server/src/client/client.js" />
         <option value="$PROJECT_DIR$/server/src/helpers/renderer.js" />
         <option value="$PROJECT_DIR$/server/src/index.js" />
+        <option value="$PROJECT_DIR$/server/src/client/client.js" />
+        <option value="$PROJECT_DIR$/server/src/client/actions/index.js" />
       </list>
     </option>
   </component>
@@ -489,7 +490,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1514926247959</updated>
-      <workItem from="1514926249232" duration="23771000" />
+      <workItem from="1514926249232" duration="24338000" />
     </task>
     <task id="LOCAL-00001" summary="refactor script so now npm run dev starts all scripts">
       <created>1515018252488</created>
@@ -516,7 +517,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23771000" />
+    <option name="totallyTimeSpent" value="24338000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1323" height="1440" extended-state="6" />
@@ -677,24 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/client/client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
-          <folding>
-            <element signature="e#99#125#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/client/actions/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -723,6 +706,24 @@
           <folding>
             <element signature="e#50#80#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/client/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
+          <folding>
+            <element signature="e#99#125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/client/actions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
