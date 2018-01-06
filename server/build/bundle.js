@@ -107,14 +107,16 @@ app.get('*', function (req, res) {
    var store = (0, _createStore2.default)();
 
    //console.log(matchRoutes(Routes, req.path));
-   // calls loadData function in our components
-   (0, _reactRouterConfig.matchRoutes)(_Routes2.default, req.path).map(function (_ref) {
+   // calls loadData function in our components, passing in server store
+   var promises = (0, _reactRouterConfig.matchRoutes)(_Routes2.default, req.path).map(function (_ref) {
       var route = _ref.route;
 
-      return route.loadData ? route.loadData() : null;
+      return route.loadData ? route.loadData(store) : null;
    });
 
-   res.send((0, _renderer2.default)(req, store));
+   Promise.all(promises).then(function () {
+      res.send((0, _renderer2.default)(req, store));
+   });
 }); // allow all routes
 
 app.listen(3000, function () {
@@ -494,8 +496,9 @@ function mapStateToProps(state) {
     return { users: state.users };
 }
 
-function loadData() {
-    console.log('Im trying to load some data!');
+function loadData(store) {
+    // manually calls a action and send back promise to server.
+    return store.dispatch((0, _actions.fetchUsers)());
 }
 
 exports.loadData = loadData;

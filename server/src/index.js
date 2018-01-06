@@ -13,12 +13,15 @@ app.get('*', (req, res) => {
    const store = createStore();
 
    //console.log(matchRoutes(Routes, req.path));
-   // calls loadData function in our components
-   matchRoutes(Routes, req.path).map(({ route }) => {
-      return route.loadData ? route.loadData() : null;
+   // calls loadData function in our components, passing in server store
+   const promises = matchRoutes(Routes, req.path).map(({ route }) => {
+      return route.loadData ? route.loadData(store) : null;
    });
 
-   res.send(renderer(req, store));
+   Promise.all(promises).then(() => {
+      res.send(renderer(req, store));
+   });
+
 }); // allow all routes
 
 app.listen(3000, () => {
