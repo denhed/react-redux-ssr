@@ -36,8 +36,8 @@ app.get('*', (req, res) => {
         })
         .map(promise => {
             if(promise) {
-                return new Promise((resolv, reject) => {
-                    promise.then(resolv).catch(resolv);
+                return new Promise((resolve, reject) => {
+                    promise.then(resolve).catch(resolve);
                 });
             }
         });
