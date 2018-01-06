@@ -31,7 +31,16 @@ app.get('*', (req, res) => {
 
    Promise.all(promises)
        .then(() => {
-         res.send(renderer(req, store));
+           const context = {};
+           const content = renderer(req, store, context);
+           // if NotFoundPage component is rendered it will set notFound to true.
+           // will only send 404 if navigate directly to a non existing page, if
+           // navigate within app (Link) it is not sending request to server.
+           if(context.notFound) {
+               res.status(404);
+           }
+
+           res.send(content);
        });
 
 }); // allow all routes
