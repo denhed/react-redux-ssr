@@ -12,7 +12,7 @@ const app = express();
 // OBS: the second arg is for this course only, you don't need it.
 app.use('/api', proxy('http://react-ssr-api.herokuapp.com', {
     proxyReqOptDecorator(opts) {
-        opts.header['x-forwarded-host'] = 'localhost:3000';
+        opts.headers['x-forwarded-host'] = 'localhost:3000';
         return opts;
     }
 }));
@@ -20,7 +20,8 @@ app.use('/api', proxy('http://react-ssr-api.herokuapp.com', {
 app.use(express.static('public'));
 
 app.get('*', (req, res) => {
-   const store = createStore();
+   // passing in req to let createStore to get access to cookie on the request.
+   const store = createStore(req);
 
    //console.log(matchRoutes(Routes, req.path));
    // calls loadData function in our components, passing in server store

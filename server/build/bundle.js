@@ -109,7 +109,7 @@ var app = (0, _express2.default)();
 // OBS: the second arg is for this course only, you don't need it.
 app.use('/api', (0, _expressHttpProxy2.default)('http://react-ssr-api.herokuapp.com', {
    proxyReqOptDecorator: function proxyReqOptDecorator(opts) {
-      opts.header['x-forwarded-host'] = 'localhost:3000';
+      opts.headers['x-forwarded-host'] = 'localhost:3000';
       return opts;
    }
 }));
@@ -117,7 +117,8 @@ app.use('/api', (0, _expressHttpProxy2.default)('http://react-ssr-api.herokuapp.
 app.use(_express2.default.static('public'));
 
 app.get('*', function (req, res) {
-   var store = (0, _createStore2.default)();
+   // passing in req to let createStore to get access to cookie on the request.
+   var store = (0, _createStore2.default)(req);
 
    //console.log(matchRoutes(Routes, req.path));
    // calls loadData function in our components, passing in server store
@@ -258,14 +259,23 @@ var _reduxThunk = __webpack_require__(10);
 
 var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 
+var _axios = __webpack_require__(15);
+
+var _axios2 = _interopRequireDefault(_axios);
+
 var _reducers = __webpack_require__(12);
 
 var _reducers2 = _interopRequireDefault(_reducers);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = function () {
-    var store = (0, _redux.createStore)(_reducers2.default, {}, (0, _redux.applyMiddleware)(_reduxThunk2.default));
+exports.default = function (req) {
+    var axiosInstance = _axios2.default.create({
+        baseURL: 'http://react-ssr-api.herokuapp.com',
+        headers: { cookie: req.get('cookie') || '' }
+    });
+
+    var store = (0, _redux.createStore)(_reducers2.default, {}, (0, _redux.applyMiddleware)(_reduxThunk2.default.withExtraArgument(axiosInstance)));
 
     return store;
 };
@@ -385,7 +395,12 @@ var fetchUsers = exports.fetchUsers = function fetchUsers() {
 };
 
 /***/ }),
-/* 15 */,
+/* 15 */
+/***/ (function(module, exports) {
+
+module.exports = require("axios");
+
+/***/ }),
 /* 16 */,
 /* 17 */
 /***/ (function(module, exports) {
