@@ -46,6 +46,14 @@ app.get('*', (req, res) => {
         .then(() => {
             const context = {};
             const content = renderer(req, store, context);
+
+            //console.log(context);
+            // redirect user if there are not logged in.
+            // 301 will cache all following requests, use 303 or 302 instead.
+            if(context.url) {
+                return res.redirect(302, context.url);
+            }
+
             // if NotFoundPage component is rendered it will set notFound to true.
             // will only send 404 if navigate directly to a non existing page, if
             // navigate within app (Link) it is not sending request to server.
